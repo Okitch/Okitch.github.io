@@ -1,0 +1,240 @@
+/*LOADER*/
+*::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: "BodegaSans";
+    position: relative;
+}
+
+@font-face {
+    font-family: "BodegaSans";
+    src: url(../fonts/BodegaSans_Black.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 1;
+}
+
+.loader {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 120px;
+    top: 400px;
+
+
+}
+
+.logo {
+    width: 300px;
+    margin: 100px 0 0 580px;
+    padding: 10px;
+    border-radius: 40px;
+    position: absolute;
+    /*animation: loadlogo 1.5s linear infinite;*/
+}
+
+.lettre {
+    font-size: 110px;
+    letter-spacing: 15px;
+    color: transparent;
+    animation: loadlettre 10s linear infinite;
+}
+
+.esp {
+    opacity: 0;
+    color: transparent;
+}
+
+button {
+    position: absolute;
+    top: 700px;
+    right: 600px;
+    padding: 5px;
+    background-color: #444444;
+    border-radius: 50%;
+    border: 4px double #ff9d00;
+    color: #ff9d00;
+    text-align: match-parent;
+    font-size: 30px;
+    font-weight: bolder;
+    width: 165px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    opacity: 0.3;
+    font-family: 'BodegaSans';
+}
+
+button:hover {
+    opacity: 1;
+
+}
+
+a {
+    text-decoration: none;
+    color: #ff9d00;
+}
+p{
+    color: #ff9d00;
+    font-family: 'Silkscreen', cursive;
+    position: absolute;
+}
+
+@keyframes loadlettre {
+    0% {
+        color: #ff9d00;
+        ;
+        text-shadow: 0 0 7px #ff9d00;
+        ;
+
+
+    }
+
+    90% {
+        color: transparent;
+        text-shadow: none;
+        opacity: 0;
+
+    }
+
+    100% {
+        color: #ff9d00;
+        ;
+        text-shadow: 0 0 7px #ff9d00;
+        ;
+    }
+
+}
+
+/*
+@keyframes loadlogo {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+
+    }
+
+    0% {
+        opacity: 0;
+    }
+
+}
+*/
+
+.lettre:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.lettre:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.lettre:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.lettre:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+.lettre:nth-child(5) {
+    animation-delay: 1.6s;
+}
+
+.lettre:nth-child(6) {
+    animation-delay: 2s;
+}
+
+.lettre:nth-child(7) {
+    animation-delay: 2.4s;
+}
+
+.lettre:nth-child(8) {
+    animation-delay: 2.8s;
+}
+
+.lettre:nth-child(9) {
+    animation-delay: 3.2s;
+}
+
+.lettre:nth-child(10) {
+    animation-delay: 3.6s;
+}
+
+.lettre:nth-child(11) {
+    animation-delay: 4s;
+}
+
+.lettre:nth-child(12) {
+    animation-delay: 4.4s;
+}
+
+.lettre:nth-child(13) {
+    animation-delay: 4.8s;
+}
+
+.lettre:nth-child(14) {
+    animation-delay: 5.2s;
+}
+
+.lettre:nth-child(15) {
+    animation-delay: 5.6s;
+}
+
+.lettre:nth-child(16) {
+    animation-delay: 6s;
+}
+
+.lettre:nth-child(17) {
+    animation-delay: 6.4s;
+}
+
+.lettre:nth-child(18) {
+    animation-delay: 6.8s;
+}
+
+.lettre:nth-child(19) {
+    animation-delay: 7.2s;
+}
+
+.lettre:nth-child(20) {
+    animation-delay: 7.6s;
+}
+
+.lettre:nth-child(21) {
+    animation-delay: 8s;
+}
+
+.lettre:nth-child(22) {
+    animation-delay: 8.4s;
+}
+
+/*Animation scroll*/
+
+.ovhi {
+    overflow: hidden;
+}
